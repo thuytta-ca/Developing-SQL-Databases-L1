@@ -1,0 +1,21 @@
+-- Create table using Transact-SQL statement
+
+
+Create table ClientInfo
+(
+  Client_id int NOT NULL,
+  Client_name nvarchar(50),
+  Client_city nvarchar(50),
+  Client_phone nvarchar(50),
+  PRIMARY KEY (Client_Id)
+);
+
+
+Craete table Client_Orders
+(
+  Order_id int NOT NULL,
+  Order_no int NOT NULL,
+  Client_id int,
+  PRIMARY KEY (Order_Id),
+  
+);
