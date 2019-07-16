@@ -1,0 +1,11 @@
+https://www.practice-labs.com/authenticated/vNext/vn-content.aspx#
+
+USE AdventureworksDW2016CTP3
+
+SELECT * FROM DimEmployee WHERE FirstName = 'David' AND GENDER = 'M' AND BirthDate > '1970-10-17'
+
+create nonclustered index Index_DimEmployee on DimEmployee (FirstName) include (HireDate, BirthDate, Gender);
+GO
+
+This query creates index named INDEX_DimEmployee on the DimEmployee table with FirstName as the key column. 
+The query also includes the non-key columns (HireDate, Birthdate and Gender) in the index.
