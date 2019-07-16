@@ -1,0 +1,5 @@
+-- Schema
+
+Create schema client;
+GO
+
