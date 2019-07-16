@@ -1,1 +1,16 @@
 --
+https://www.practice-labs.com/authenticated/vNext/vn-content.aspx#
+
+select * from FactInternetSales where OrderDateKey = '20101229' and DueDateKey = '20110110';
+
+To check the query performance, from the Query menu, click Include Actual Execution Plan option.
+
+To run the query, click Execute or press F5.
+
+The query runs successfully and the result set is displayed in the result pane along with the Execution plan tab.
+
+To view the execution plan of the query, click Execution plan tab from the results pane.
+
+The complete execution plan of the current query appears.
+
+Notice that in the Execution Plan, the clustered index scan cost on the FactInternetSales table is 100%.
