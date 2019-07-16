@@ -1,4 +1,6 @@
 
+-- https://www.practice-labs.com/authenticated/vNext/vn-content.aspx#
+
 -- CREATE CLUSTERED INDEX <index name> ON <table name (column name)>
 -- CREATE NONCLUSTERED INDEX <index name> ON <table name (column name)>
 -- GO
