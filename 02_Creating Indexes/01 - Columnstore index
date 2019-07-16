@@ -1,1 +1,22 @@
+
+-- CREATE CLUSTERED INDEX <index name> ON <table name (column name)>
+-- CREATE NONCLUSTERED INDEX <index name> ON <table name (column name)>
+-- GO
+
+create nonclustered index FactInternetSales_ProductKey on FactInternetSales (ProductKey)
+GO
+
+
 -- 
+SELECT
+ constraint_name = name,
+ foreign_schema = OBJECT_SCHEMA_NAME(parent_object_id),
+ foreign_table = OBJECT_NAME(parent_object_id),
+ referenced_schema = OBJECT_SCHEMA_NAME(referenced_object_id),
+ referenced_table = OBJECT_NAME(referenced_object_id)
+FROM sys.foreign_keys
+WHERE OBJECT_NAME(referenced_object_id) = 'Clientinfo'
+-- if you want the tables that a child table references, use this instead:
+--WHERE OBJECT_NAME(parent_object_id) = 'Table name';
+
+
