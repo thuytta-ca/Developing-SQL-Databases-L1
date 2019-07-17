@@ -1,5 +1,6 @@
 
 -- https://www.practice-labs.com/authenticated/vNext/vn-content.aspx#
+-- https://imit.percipio.com/channels/6b009d30-512d-11e7-8857-f7dad1711fa5?tab=PRACTICE
 
 -- CREATE CLUSTERED INDEX <index name> ON <table name (column name)>
 -- CREATE NONCLUSTERED INDEX <index name> ON <table name (column name)>
