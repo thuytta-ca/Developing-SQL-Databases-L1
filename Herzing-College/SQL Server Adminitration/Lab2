@@ -1,0 +1,37 @@
+	Lab 2 Working SQL Querys 
+	Name: THUY TA
+	
+11_List the member numbers and names of all members who have rented bewteen 10 and 20 DVD's.
+Select MMBNUMB, MMBNAME from MEMBER where NUMRENT between 10 and 20;
+
+12_List the numbers and names of all directors who are still living.
+Select DIRNUMB, DIRNAME from DIRECTOR where DIRDIED is NULL;
+
+13_List the numbers, names, and ages (year died minus year of birth) of all movie stars who are deceased.
+Select STARNUMB, STARNAME, (STARDIED - STARBORN) as 'AGE'  from STAR where STARDIED is NOT NULL;
+
+14_Find the numbers and names of all directors whose first name is Ford
+Select DIRNUMB, DIRNAME from DIRECTOR where  DIRNAME like 'Ford%' ;
+
+15_List the numbers and titles of all movies whose type is COMEDY. RELIGI, or SUSPEN.
+Select MVNUMB, MVTITLE from MOVIE where MVTYPE in ('COMEDY','RELIGI','SUSPEN');
+
+16_List the numbers, names, addresses, and join dates of all members. Sort the output by name.
+Select MMBNUMB, MMBNAME, MMBADDR, JOINDATE from MEMBERS order by MMBNAME;
+
+17_List the numbers, names, addresses, and join dates of all members. Sort the output by city within state.
+Select MMBNUMB, MMBNAME, MMBADDR, JOINDATE from MEMBERS order by MMBCTY;
+
+18_List the numbers, names, addresses, and join dates of all members. Sort the output by join date. List the most recent member first.
+Select MMBNUMB, MMBNAME, MMBADDR, JOINDATE from MEMBERS order by JOINDATE DESC;
+
+19_Find out how many movies are of type SUSPEN.
+Select count(MVTYPE) from MOVIE where MVTYPE = 'SUSPEN';
+
+20_Find out how many movies are of type SUSPEN. the total numbers of awards for which these movies were nominated, and the total number of awards they won.
+Select  MVCOUNT = count(MVTYPE),Total_MVAWRD_Monimated = sum(NOMS), Total_MVAWRD = sum(AWRD) from MOVIE where MVTYPE = 'SUSPEN';
+
+
+
+
+
