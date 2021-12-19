@@ -1,0 +1,32 @@
+
+Lab 1 - working SQL query's
+Name: Thuy Ta
+1_List the numbers, names, and addresses of all members.
+SELECT mmbnumb, mmbname, mmbaddr FROM member;
+
+2_List the numbers and titles of all movies.
+SELECT mvnumb, mvtitle FROM movie;
+
+3_List the complete DIRECTOR table. 
+SELECT * FROM director;
+
+4_List the names of all directors born in or after 1920.
+SELECT dirname FROM director WHERE dirborn >= 1920;
+
+5_List the DVD numbers of all DVDs that have rented at least 10 times.
+SELECT tpnumb, tmsrent FROM dvd WHERE tmsrent >= 10;
+
+6_List the numbers and titles of all movies that have won at least one Academy Award.
+SELECT mvnumb, mvtitle FROM movie WHERE awrd > 0;
+
+7_List the numbers and titles of all movies whose MPAA rating is PG.
+SELECT mvnumb, mvtitle FROM movie WHERE mpaa = 'PG';
+
+8_List the numbers and titles of all movies whose MPAA rating is PG and which were nominated for at least one Academy Award.
+SELECT mvnumb, mvtitle FROM movie WHERE UPPER(Movie.mpaa) = UPPER('PG') AND Movie.awrd > 0;
+
+9_List the numbers and titles of all movies that were rated PG or that won at least one Academy Award.
+SELECT mvnumb, mvtitle FROM movie WHERE mpaa = 'PG' OR awrd > 0;
+
+10_List the numbers and titles of all movies that have an MPAA rating. (If a movie does not have an MPAA rating, its rating is listed as NR, which stands for not rated.)
+SELECT mvnumb, mvtitle FROM movie WHERE mpaa <> 'NR';
