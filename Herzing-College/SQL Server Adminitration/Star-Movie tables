@@ -1,0 +1,58 @@
+MOVIE								
+								
+MVNUMB	MVTITLE	YRMDE	MVTYPE	CRIT	MPAA	NOMS	AWRD	DIRNUMB
+1	Annie Hall	1977	COMEDY	4	PG	5	4	1
+2	Dr. Strangelove	1964	COMEDY	4	PG	4	0	5
+3	Clockwork Orange	1971	SCI FI	4	R	3	0	5
+4	North by Northwest	1959	SUSPEN	4	PG	1	0	2
+5	Rope	1948	SUSPEN	3	NR	0	0	2
+6	Psycho	1960	HORROR	4	PG	3	0	2
+7	Interiors	1978	DRAMA	3	PG	3	0	1
+8	The Birds	1963	HORROR	3	NR	0	0	2
+9	Samson and Delilah	1949	RELIGI	2	NR	1	0	3
+10	Guess Who's Coming to Dinner	1967	COMEDY	3	NR	6	2	4
+11	Manhattan	1979	COMEDY	4	R	2	0	1
+12	Vertigo	1958	SUSPEN	4	NR	0	0	2
+13	Judgment at Nuremberg	1961	DRAMA	3	NR	6	2	4
+14	2001	1968	SCI FI	4	G	2	0	5
+15	The Man with the Golden Arm	1955	DRAMA	3	NR	1	0	6
+16	Anatomy of a Murder	1959	SUSPEN	4	NR	4	0	6
+17	Inherit the Wind	1960	DRAMA	4	NR	2	0	4
+18	Laura	1944	SUSPEN	4	NR	3	1	6
+19	The Ten Commandments	1956	RELIGI	3	NR	1	0	3
+20	The Moon Is Blue	1953	COMEDY	2	NR	1	0	6
+21	Stagecoach	1939	WESTER	4	NR	3	1	7
+22	Rear Window	1954	SUSPEN	4	NR	1	0	2
+23	Mogambo	1953	WESTER	3	NR	2	0	7
+24	Grapes of Wrath	1940	DRAMA	4	NR	4	2	7
+
+STAR				
+				
+STARNUMB	STARNAME	BRTHPLiCE	STARBORN	STARDIED
+1	Allen, Woody	New York	1935	_
+2	Keaton, Diane	Los Angeles	1946	-
+3	Sellers, Peter	Southsea, Eng.	1925	1980
+4	Scott, George C	Wise, Va	1927	-
+5	McDowell, Malcolm	Leeds, Eng.	1943	-
+6	Grant, Cary	Bristol, Eng.	1904	1986
+7	Saint, Eva Marie	Newark, N.J.	1929	-
+8	Stewart, James	Indiana, Pa.	1908	-
+9	Perkins, Anthony	New York	1932	-
+10	Leigh, Janet	Merced, Cal.	1927	-
+11	Taylor, Rod	Sydney, Australia	1930	-
+12	Hedren, Tippi	Lafayette, Mirm.	1935	-
+13	Mature, Victor	Louisville, Ky.	1916	-
+14	Tracy, Spencer	Milwaukee	1900	1967
+15	Hepburn, Katharine	Hartford	1909	-
+16	Dullea, Keir	Cleveland	1939	-
+17	Novak, Kim	Chicago	1933	-
+18	Sinatra, Frank	Hoboken, N.J.	1915	-
+19	March, Fredric	Racine, Wis.	1897	1975
+20	Andrews, Dana	Collins, Miss.	1912	-
+21	Heston, Charlton	Evanston, 111.	1923	-
+22	McNamara, Maggie	New York	1928	1978
+23	Niven, David	Kirriemuir, Scot.	1910	1983
+24	Wayne, John	Winterset, Iowa	1907	1979
+25	Gable, Clark	Cadiz, 0.	1901	1960
+26	Kelly, Grace	Philadelphia	1929	1982
+27	Fonda, Henry	Grand Island, Neb.	1905	1982
