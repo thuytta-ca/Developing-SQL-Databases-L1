@@ -7,18 +7,6 @@ CREATE TABLE [dbo].[DIRECTOR](
 ) ON [PRIMARY]
 GO
 	
-							
-DIRECTOR							
-							
-DIRNUMB	DIRNAME       	DIRBORN	DIRDIED				
-1	     Allen, Woody	    1935	-				
-2	     Hitchcock, Alfred	1899	1980				
-3      De Mille, Cecil B.	1881	1959				
-4	     Kramer, Stanley	1913	-				
-5	     Kubrick, Stanley	1928	-				
-6      Preminger, Otto	1906	-				
-7 	   Ford, John	1895	1973	
-
 MEMBER							
 							
 MMBNUMB	MMBNAME	MMBADDR	MMBCTY	MMBST	NUMRENT	BONUS	JOINDATE
@@ -33,4 +21,16 @@ MMBNUMB	MMBNAME	MMBADDR	MMBCTY	MMBST	NUMRENT	BONUS	JOINDATE
 9	Franklin, Trudy-	103 Bedford	Brook	Mi	27	3	1994-12-13
 10	Stein, Shelly	82 Harcourt	Hudson	Mi	4	0	1995-06-21
 							
+							
+							
+DIRECTOR							
+							
+DIRNUMB	DIRNAME	DIRBORN	DIRDIED				
+1	Allen, Woody	1935	-				
+2	Hitchcock, Alfred	1899	1980				
+3	De Mille, Cecil B.	1881	1959				
+4	Kramer, Stanley	1913	-				
+5	Kubrick, Stanley	1928	-				
+6	Preminger, Otto	1906	-				
+7	Ford, John	1895	1973				
 	
