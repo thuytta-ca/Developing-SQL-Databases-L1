@@ -1,0 +1,33 @@
+Lab 3 Working SQL Querys 
+Name: Thuy Ta
+
+21_Count the number of members who are currently renting DVDs
+Select 'Members who are currently renting DVDs' = COUNT(m.MMBNUMB) from MEMBERS m inner join DVD d on m.MMBNUMB = d.MMBNUMB where d.TMSRENT > 0
+
+22_Find the maximum number of awards that any movie directed by director 5 was nominated for. Find all movies (any director) that won at least as many awards as this maximum. (Do this with two separate queries. Do it with a single query that utilizes a subquery.)
+select MVTITLE from MOVIE where AWRD > (Select max(AWRD) from MOVIE where NOMS>0 and DIRNUMB = 5)
+select MVTITLE from MOVIE group by MVTITLE  having max(AWRD) not in (Select AWRD from MOVIE where NOMS>0 and DIRNUMB = 5)
+
+23_List the numbers and names of all members who have rented more DVDs than average.
+Select m.MMBNUMB, m.MMBNAME, d.TMSRENT from MEMBERS m inner join DVD d on m.MMBNUMB = d.MMBNUMB where d.TMSRENT > (select avg(d.TMSRENT)from DVD d)
+
+24_For each director, list the director's number and the total number of awards won by movies he or she has directed.
+select d.DIRNUMB, d.DIRNAME, 'total number of awards won by movies' = sum(m.AWRD) from DIRECTOR d, MOVIE m where m.DIRNUMB = d.DIRNUMB group by d.DIRNAME, d.DIRNUMB
+
+25_Repeat Exercise 24, but only list the directors for whom the total number of awards is at least 4.
+select d.DIRNAME, 'total number of awards is at least 4' = sum(m.AWRD) from DIRECTOR d, MOVIE m where m.DIRNUMB = d.DIRNUMB group by d.DIRNAME having sum(m.AWRD) > 3
+
+26_For each director, list the director's number and the total number of awards won by comedies (movies which type is COMEDY) he or she has directed.
+select d.DIRNUMB, d.DIRNAME, 'total number of awards won by comedies' = sum(m.AWRD) from DIRECTOR d, MOVIE m where (m.DIRNUMB = d.DIRNUMB and m.MVTYPE = 'COMEDY') group by d.DIRNUMB, d.DIRNAME
+
+27_Repeat Exercise 26, but only list the directors for whom the total number of awards is at least 1.
+select d.DIRNUMB, d.DIRNAME, 'total number of awards won by comedies' = sum(m.AWRD) from DIRECTOR d, MOVIE m where (m.DIRNUMB = d.DIRNUMB and m.MVTYPE = 'COMEDY') group by d.DIRNUMB, d.DIRNAME having sum(m.AWRD) >= 1
+
+28_For each movie, list the movie number, title, and the number and name of the director.
+Select  m.MVNUMB, m.MVTITLE, d.DIRNUMB, d.DIRNAME from DIRECTOR d, MOVIE m
+
+29_For each DVD, list the DVD number and purchased date along with the number and title of the movie on the DVD.
+Select d.TPNUMB, d.PURDATE, d.MVNUMB, m.MVTITLE from DVD d, MOVIE m
+
+30_For each movie of type COMEDY, list the movie number and title along with the number and name of the director of the movie.
+select m.MVNUMB, m.MVTITLE, m.MVTYPE, d.DIRNUMB, d.DIRNAME from MOVIE m, DIRECTOR d where m.MVTYPE = 'COMEDY'
