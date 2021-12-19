@@ -1,5 +1,5 @@
-	Lab 2 Working SQL Querys 
-	Name: THUY TA
+Lab 2 Working SQL Querys 
+Name: THUY TA
 	
 11_List the member numbers and names of all members who have rented bewteen 10 and 20 DVD's.
 Select MMBNUMB, MMBNAME from MEMBER where NUMRENT between 10 and 20;
