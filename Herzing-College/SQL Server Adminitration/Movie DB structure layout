@@ -1,0 +1,72 @@
+EXERCISES (MOVIES)
+1. Use CREATE TABLE commands to describe all the tables in the Movies da¬tabase to SQL. The information you will need is shown in Figure 2.5. This information is rather generic (for example, the use of "Numeric" for numbers rather than something specific such as DECIMAL, INTEGER, or SMALLINT). Feel free to use any type provided by your implementation of SQL that will allow implementing numbers with the indicated sizes.
+DIRECTOR
+			Dec.	Nulls	
+Column	Type	Length	Places	Allowed?	Description
+DIRNUMB	Numeric	3	0		Director number
+DIRNAME	Char	18			Director name
+DIRBORN	Numeric	4	0		Year of birth
+DIRDIED	Numeric	4	0	Yes	Year of death (null if still
+					living)
+STAR
+			Dec.	Nulls	
+Column	Type	Length	Places	Allowed?	Description
+STARNUMB	Numeric	4	0		Star number
+STARNAME	Char	IS			Star name
+BRTHPLCE	Char	25		Yes	Birthplace
+STARBORN	Numeric	4	0		Year of birth
+STARDIED	Numeric	4	0	Yes	Year of death (null if still
+					living)
+MOVIE
+			Dec.	Nulls	
+Column	Type	Length	Places	Allowed?	Description
+MVNUMB	Numeric	4	0		Movie number
+MVTITLE	Char	30			Movie title
+YRMDE	Numeric	4	0		Year made
+MVTYPE	Char	6		Yes	Movie type (COMEDY, SCI PI,
+					SUSPEN, HORROR, DRAMA,
+					RELIGI, WESTER)
+CRIT	Numeric	1	0	Yes	Critics' rating (number of
+					stars awarded)
+MPAA	Char	2		Yes	MPAA rating (G, PG, etc.)
+NOMS	Numeric	1	0	Yes	Number of academy award
+					nominations
+AWRD	Numeric	1	0	Yes	Number of academy awards won
+DIRNUMB	Numeric	3	0	Yes	Director number (must match
+					DIRNUMB of DIRECTOR table)
+
+
+MOVSTAR			Dec.	Nulls	
+Column	Type	Length	Places	Allowed?	Description
+MVNUMB	Numeric	4	0	"	Movie number (must match MVNUMB
+					of MOVIE table)
+STARNUMB	Numeric	4	0		Star number (must match STARNUMB
+					of STAR table)
+MEMBER
+			Dec.	Nulls	
+Column	Type	Length	Places	Allowed?	Description
+MMBNUMB	Numeric	4	0		Member number
+MMBNAME	Char	16			Member name
+MMBADDR	Char	12			Member address (street)
+MMBCTY	Char	10			Member city
+MMBST	Char	2			Member state
+NUMRENT	Numeric	3	0		Number of rentals member has had
+BONUS	Numeric	2	0		Number of bonus units member has
+					qualified for but not used
+JOINDATE	Date				Date member joined the club
+DVD
+			Dec.	Nulls	
+Column	Type	Length	Places	Allowed?	Description
+TPNUMB	Numeric	4	0		DVD number
+~ MVNUMB	Numeric	4	0		Movie number (must match MVNUMB —
+					of MOVIE table)
+PURDATE	Date				Date DVD was purchased
+TMSRENT	Numeric	3	0		Number of times DVD has been
+					rented
+MMBNUMB	Numeric	4	0	Yes	Member number (of the member who
+					is currently renting the DVD)
+					Null if DVD is not currently
+					being rented.
+
+2.	Add all the directors shown in Figure 1.5 to the DIRECTOR table using the INSERT command. (Watch out for the nulls. Remember that you must use a special form of the INSERT command.)
+3.	Add the remaining data shown in Figures 1.6 through 1.10 to the other tables in the Movies database. You can use the INSERT command for this. If your system has a simpler way to add data, however, feel free to use it.
