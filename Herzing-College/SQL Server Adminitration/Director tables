@@ -1,0 +1,36 @@
+	
+CREATE TABLE [dbo].[DIRECTOR](
+	[DIRNUMB] [numeric](3, 0) NOT NULL,
+	[DIRNAME] [char](18) NOT NULL,
+	[DIRBORN] [numeric](4, 0) NOT NULL,
+	[DIRDIED] [numeric](4, 0) NULL
+) ON [PRIMARY]
+GO
+	
+							
+DIRECTOR							
+							
+DIRNUMB	DIRNAME       	DIRBORN	DIRDIED				
+1	     Allen, Woody	    1935	-				
+2	     Hitchcock, Alfred	1899	1980				
+3      De Mille, Cecil B.	1881	1959				
+4	     Kramer, Stanley	1913	-				
+5	     Kubrick, Stanley	1928	-				
+6      Preminger, Otto	1906	-				
+7 	   Ford, John	1895	1973	
+
+MEMBER							
+							
+MMBNUMB	MMBNAME	MMBADDR	MMBCTY	MMBST	NUMRENT	BONUS	JOINDATE
+1	Allen, Donna	21 Wilson	Carson	In	2	0	1995-05-25
+2	Peterson, Mark	215 Raymond	Cedar	In	14	1	1994-02-20
+3	Sanchez, Miguel	47 Chipwood	Mantin	Il	22	0	1994-06-14
+4	Tran, Thanh	108 College	Carson	In	3	0	1995-07-03
+5	Roberts, Terry	602 Bridge	Hudson	Mi	1	0	1994-11-16
+6	MacDonald, Greg	19 Oak	Carson	In	11	1	1995-01-29
+7	VanderJagt, Neal	12 Bishop	Mantin	Il	19	2	1994-08-11
+8	Shippers, John	208 Grayton	Cedar	In	6	1	1995-09-02
+9	Franklin, Trudy-	103 Bedford	Brook	Mi	27	3	1994-12-13
+10	Stein, Shelly	82 Harcourt	Hudson	Mi	4	0	1995-06-21
+							
+	
